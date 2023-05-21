@@ -1,0 +1,1348 @@
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(165, 179, 191);
+$color_type_2: rgb(172, 209, 175);
+$color_type_3: rgb(179, 27, 27);
+$color_type_4: rgb(224, 205, 103);
+$color_type_5: rgb(243, 250, 255);
+$color_type_6: rgb(28, 28, 28);
+$color_type_7: rgb(34, 39, 48);
+$color_type_8: rgb(34, 62, 76);
+$color_type_9: rgb(38, 160, 218);
+$color_type_10: rgba(255, 255, 255, 0.498);
+$color_type_11: rgba(255, 255, 255, 0.6);
+$color_type_12: rgba(255, 255, 255, 0.698);
+
+$border_radius_type_0: 10px 10px 0px 0px;
+$border_radius_type_1: 10px 10px 10px 10px;
+$border_radius_type_2: 8px 8px 8px 8px;
+
+$font_type_0: 400 30px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_1: 500 22px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_2: 500 20px/1.2 "Montserrat", Helvetica, Arial, serif;
+$font_type_3: 400 18px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_4: 700 18px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_5: 500 18px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_6: 400 18px/1.22 "Montserrat", Helvetica, Arial, serif;
+$font_type_7: 500 18px/1.22 "Montserrat", Helvetica, Arial, serif;
+$font_type_8: 500 16px/1.25 "Montserrat", Helvetica, Arial, serif;
+$font_type_9: 400 14px/1.2 "Century Gothic", Helvetica, Arial, serif;
+$font_type_10: 500 1em/1.2 "Montserrat", Helvetica, Arial, serif;
+
+.root {
+  @include flex-column;
+  background: var(--src) center center / cover no-repeat;
+  background-color: $color_type_5;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  @include lg {
+    margin: 20px 16px 0px 32px;
+  }
+  @include md {
+    margin: 20px 12px 0px 28px;
+  }
+  @include sm {
+    margin: 20px 12px 0px 24px;
+  }
+  @include xs {
+    margin: 20px 8px 0px 20px;
+  }
+  @include xxs {
+    margin: 20px 8px 0px 16px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 1060px;
+  margin: 20px 20px 0px 40px;
+}
+.decorator {
+  width: calc(100% - 56px);
+  height: auto;
+  aspect-ratio: 0.85;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  bottom: -733px;
+  left: -562px;
+  right: 618px;
+}
+.flexRow {
+  @include lg {
+    left: 16px;
+    right: 16px;
+  }
+  @include md {
+    left: 12px;
+    right: 12px;
+  }
+  @include xs {
+    left: 8px;
+    right: 8px;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  top: 0px;
+  bottom: 1030px;
+  left: 20px;
+  right: 20px;
+}
+.icon {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 30px;
+}
+.icon1 {
+  width: 30px;
+  height: auto;
+  aspect-ratio: 1;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 30px;
+}
+.subtitle_box {
+  @include lg {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 61px;
+  margin: 3px 0px;
+}
+.subtitle {
+  @include font-face($font_type_2, $color_type_0, 0px);
+  @include lg {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+.subtitle_span0 {
+  font: $font_type_10;
+  color: $color_type_6;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+.subtitle_span1 {
+  font: $font_type_10;
+  color: $color_type_9;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+.subtitle_span2 {
+  font: $font_type_10;
+  color: $color_type_6;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+.flexRow1 {
+  @include v-center-content;
+  width: 25.91%;
+  position: absolute;
+  top: 4px;
+  bottom: 1034px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 5.65% 0px 68.44%;
+}
+.highlights1 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_6, $color_type_6, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 74px;
+}
+.flexRow1 > .spacer {
+  flex: 0 1 50px;
+}
+.highlights {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_7, $color_type_6, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 104px;
+}
+.highlights11 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_6, $color_type_6, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 67px;
+}
+.highlights12 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include font-face($font_type_6, $color_type_6, 0px);
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 87px;
+}
+.wrapper {
+  @include md {
+    width: 57.14%;
+  }
+  @include sm {
+    width: 64%;
+  }
+  @include xs {
+    width: 70.33%;
+  }
+  @include xxs {
+    width: 75.96%;
+  }
+  @include tn {
+    width: 80.82%;
+  }
+  @include flex-column;
+  background-color: $color_type_10;
+  border-radius: $border_radius_type_1;
+  width: 50%;
+  position: absolute;
+  top: 134px;
+  bottom: 336px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+.wrapper1 {
+  @include md {
+    margin: 11px 4px 8px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 11px 10px 8px;
+}
+.wrapper11 {
+  @include flex-column;
+  position: relative;
+}
+.wrapper2 {
+  @include v-center-content;
+  position: relative;
+}
+.wrapper3 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper31 {
+  @include flex-column;
+  border-style: solid;
+  border-color: $color_type_3;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.highlights2 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 22px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 22px;
+  margin: 37px auto 35px;
+}
+.wrapper4 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper41 {
+  @include flex-column;
+  border-style: solid;
+  border-color: $color_type_2;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.highlights21 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.highlights22 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 17px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 17px;
+  margin: 37px auto 35px;
+}
+.wrapper5 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper51 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.group1 {
+  @include flex-column;
+  background-color: $color_type_8;
+  border-radius: $border_radius_type_1;
+  position: relative;
+  flex-grow: 1;
+  margin: 4px 5px;
+}
+.title {
+  @include lg {
+    font-size: 24px;
+  }
+  @include sm {
+    font-size: 20px;
+  }
+  @include xxs {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_5;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 11px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 11px;
+  margin: 25px auto 24px;
+}
+.wrapper6 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper61 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 11px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 11px;
+  margin: 37px auto 35px;
+}
+.wrapper7 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper71 {
+  @include flex-column;
+  border-style: solid;
+  border-color: $color_type_1;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper8 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper81 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 12px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 12px;
+  margin: 37px auto 35px;
+}
+.wrapper9 {
+  @include v-center-content;
+  position: relative;
+}
+.wrapper62 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 12px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 12px;
+  margin: 37px auto 35px;
+}
+.wrapper82 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 14px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 14px;
+  margin: 37px auto 35px;
+}
+.wrapper10 {
+  @include v-center-content;
+  position: relative;
+}
+.wrapper63 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 17px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 17px;
+  margin: 37px auto 36px;
+}
+.wrapper111 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper112 {
+  @include flex-column;
+  border-style: solid;
+  border-color: $color_type_4;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper64 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 19px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 19px;
+  margin: 37px auto 36px;
+}
+.wrapper65 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 18px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 18px;
+  margin: 37px auto 36px;
+}
+.wrapper12 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper121 {
+  @include flex-column;
+  border-style: dashed;
+  border-color: $color_type_3;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper83 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 18px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 18px;
+  margin: 37px auto 36px;
+}
+.wrapper66 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 18px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 18px;
+  margin: 37px auto 35px;
+}
+.wrapper67 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 23px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 23px;
+  margin: 37px auto 35px;
+}
+.wrapper68 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 17px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 17px;
+  margin: 37px auto 35px;
+}
+.wrapper69 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 21px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 21px;
+  margin: 37px auto 35px;
+}
+.wrapper84 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 21px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 21px;
+  margin: 37px auto 35px;
+}
+.wrapper13 {
+  @include v-center-content;
+  position: relative;
+}
+.wrapper610 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_7;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 22px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 22px;
+  margin: 37px auto 35px;
+}
+.wrapper14 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper141 {
+  @include flex-column;
+  border-style: dashed;
+  border-color: $color_type_3;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper85 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 17px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 17px;
+  margin: 37px auto 35px;
+}
+.wrapper86 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_3;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 7px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 7px;
+  margin: 37px auto 35px;
+}
+.wrapper15 {
+  @include v-center-content;
+  position: relative;
+}
+.highlights23 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 11px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 11px;
+  margin: 37px auto 35px;
+}
+.highlights24 {
+  @include sm {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  width: 12px;
+  position: relative;
+  flex-grow: 1;
+  min-width: 12px;
+  margin: 37px auto 35px;
+}
+.wrapper16 {
+  @include flex-column;
+  position: relative;
+  flex: 1 1 130px;
+}
+.wrapper161 {
+  @include flex-column;
+  border-style: dashed;
+  border-color: $color_type_3;
+  border-width: 0px 0px 4px 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.group2 {
+  @include flex-column;
+  width: 23.92%;
+  position: absolute;
+  top: 134px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 76.08% 0px 0%;
+}
+.wrapper17 {
+  @include flex-column;
+  background-color: $color_type_11;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  flex-grow: 1;
+}
+.group3 {
+  @include lg {
+    margin: 20px 16px 91px;
+  }
+  @include md {
+    margin: 20px 12px 91px;
+  }
+  @include xs {
+    margin: 20px 8px 91px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 20px 20px 91px;
+}
+.group4 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 815px;
+}
+.group5 {
+  @include flex-column;
+  position: absolute;
+  top: 0px;
+  bottom: 285px;
+  min-height: 530px;
+  left: 0px;
+  right: 0px;
+}
+.flexCol {
+  @include flex-column;
+  position: absolute;
+  top: 0px;
+  bottom: 285px;
+  left: 0px;
+  right: 0px;
+}
+.highlights3 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_6, 0px);
+  position: relative;
+}
+.highlights31 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_6, 0px);
+  position: relative;
+  margin: 9px 0px 0px;
+}
+.flexCol > .cell {
+  margin-top: -17px;
+  @include flex-column;
+  position: relative;
+}
+.highlights4 {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_8;
+  color: $color_type_1;
+  text-align: right;
+  text-decoration: underline;
+  letter-spacing: 0px;
+  position: relative;
+  flex-grow: 1;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: flex-start;
+  row-gap: 16px;
+  column-gap: 16px;
+  position: absolute;
+  top: 285px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.highlights32 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_6, 0px);
+  position: relative;
+  flex: 0 1 405px;
+}
+.highlights33 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_6, 0px);
+  position: relative;
+  flex: 0 0 405px;
+}
+.highlights41 {
+  @include lg {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_8;
+  color: $color_type_1;
+  text-align: right;
+  text-decoration: underline;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 405px;
+}
+.flexCol1 {
+  @include flex-column;
+  position: absolute;
+  top: 265px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.flexCol2 {
+  @include flex-column;
+  width: 76.54%;
+  position: relative;
+  margin: 0px 12.84% 0px 10.62%;
+}
+.line {
+  @include md {
+    margin: 0px 0px 0px 4px;
+  }
+  background-color: $color_type_1;
+  height: 1px;
+  position: relative;
+  margin: 0px 0px 0px 9px;
+}
+.line1 {
+  @include md {
+    margin: 284px 4px 0px 0px;
+  }
+  background-color: $color_type_1;
+  height: 1px;
+  position: relative;
+  margin: 284px 9px 0px 0px;
+}
+.flexCol3 {
+  @include flex-column;
+  position: relative;
+  margin: 19px 0px 0px;
+}
+.highlights34 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_3, $color_type_6, 0px);
+  position: relative;
+  margin: 37px 0px 0px;
+}
+.flexCol3 > .cell {
+  margin-top: -17px;
+  @include flex-column;
+  position: relative;
+}
+.flexRow2 {
+  @include v-center-content;
+  column-gap: 20px;
+  width: 75.54%;
+  position: absolute;
+  top: 736px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 0% 0px 24.46%;
+}
+.flexRow3 {
+  @include v-center-content;
+  column-gap: 20px;
+  position: relative;
+  flex: 0 1 930px;
+  margin: 1px 0px 0px;
+}
+.wrapper18 {
+  @include flex-column;
+  background-color: $color_type_12;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  flex: 0 1 455px;
+}
+.flexCol4 {
+  @include lg {
+    margin: 20px 16px 123px;
+  }
+  @include md {
+    margin: 20px 12px 123px;
+  }
+  @include xs {
+    margin: 20px 8px 123px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 20px 20px 123px;
+}
+.highlights5 {
+  @include sm {
+    font-size: 12px;
+  }
+  @include tn {
+    width: 79.96%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: $font_type_4;
+  color: $color_type_6;
+  text-align: right;
+  letter-spacing: -0.1px;
+  width: 74.94%;
+  position: relative;
+  margin: 0px auto;
+}
+.flexCol4 > .cell {
+  @include flex-column;
+  position: relative;
+  z-index: 2;
+}
+.wrapper19 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 17px 0px 0px;
+}
+.wrapper20 {
+  @include flex-column;
+  border-radius: $border_radius_type_2;
+  position: relative;
+}
+.group6 {
+  @include lg {
+    margin: 18px 24px 19px 16px;
+  }
+  @include md {
+    margin: 18px 20px 19px 12px;
+  }
+  @include sm {
+    margin: 18px 16px 19px 12px;
+  }
+  @include xs {
+    margin: 18px 16px 19px 8px;
+  }
+  @include xxs {
+    margin: 18px 12px 19px 8px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 23px;
+  margin: 18px 28px 19px 20px;
+}
+.highlights6 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_5, $color_type_6, 0px);
+  width: 29.43%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 70.57% 0px 0%;
+}
+.image1 {
+  width: 7px;
+  height: auto;
+  aspect-ratio: 0.58;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 5px;
+  bottom: 6px;
+  left: 0px;
+  right: 0px;
+  min-width: 7px;
+  margin: 0px 0px 0px auto;
+}
+.wrapper21 {
+  @include flex-column;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.highlights61 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_5, $color_type_6, 0px);
+  width: 26.16%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 73.84% 0px 0%;
+}
+.image11 {
+  width: 7px;
+  height: auto;
+  aspect-ratio: 0.58;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 6px;
+  bottom: 5px;
+  left: 0px;
+  right: 0px;
+  min-width: 7px;
+  margin: 0px 0px 0px auto;
+}
+.flexCol4 > .cell1 {
+  margin-top: -70px;
+  @include flex-column;
+  position: relative;
+  z-index: 1;
+}
+.line2 {
+  @include tn {
+    width: 77.86%;
+  }
+  background-color: $color_type_1;
+  width: 72.53%;
+  height: 1px;
+  position: relative;
+  margin: 0px auto;
+}
+.group7 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 455px;
+}
+.group8 {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+}
+.wrapper22 {
+  @include flex-column;
+  background-color: $color_type_12;
+  border-radius: $border_radius_type_0;
+  position: relative;
+  flex-grow: 1;
+}
+.flexCol5 {
+  @include lg {
+    margin: 20px 16px 85px;
+  }
+  @include md {
+    margin: 20px 12px 85px;
+  }
+  @include xs {
+    margin: 20px 8px 85px;
+  }
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  margin: 20px 20px 85px;
+}
+.highlights51 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_4, $color_type_6, 0px);
+  width: 48.92%;
+  position: relative;
+  margin: 0px auto;
+}
+.wrapper23 {
+  @include flex-column;
+  border-radius: $border_radius_type_2;
+  position: relative;
+  margin: 17px 0px 0px;
+}
+.flexRow4 {
+  @include lg {
+    margin: 20px 16px;
+  }
+  @include md {
+    margin: 20px 12px;
+  }
+  @include xs {
+    margin: 20px 8px;
+  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 20px;
+}
+.flexCol6 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 311px;
+}
+.highlights62 {
+  @include sm {
+    font-size: 12px;
+    text-align: left;
+  }
+  display: flex;
+  align-items: center;
+  @include font-face($font_type_5, $color_type_6, 0px);
+  position: relative;
+}
+.flexCol7 {
+  @include flex-column;
+  position: relative;
+  margin: 20px 0px 0px;
+}
+.text {
+  display: flex;
+  justify-content: flex-end;
+  font: $font_type_9;
+  color: $color_type_8;
+  text-align: right;
+  letter-spacing: 0px;
+  width: 70.42%;
+  position: relative;
+  margin: 0px auto;
+}
+.flexCol7 > .cell {
+  margin-top: -20px;
+  @include flex-column;
+  position: relative;
+}
+.text1 {
+  @include font-face($font_type_9, $color_type_6, 0px);
+  position: relative;
+  flex-grow: 1;
+}
+.text11 {
+  @include font-face($font_type_9, $color_type_6, 0px);
+  position: relative;
+  margin: 7px 1px 0px;
+}
+.text12 {
+  @include font-face($font_type_9, $color_type_6, 0px);
+  position: relative;
+  margin: 8px 0px 0px;
+}
+.flexRow4 > .spacer {
+  flex: 0 1 49px;
+}
+.flexRow4 > .cell {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 7px;
+}
+.image12 {
+  width: 7px;
+  height: auto;
+  aspect-ratio: 0.58;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  min-width: 7px;
+  margin: 6px 0px 120px;
+}
+.image2 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.4;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+}
+.flexRow5 {
+  @include xxl {
+    width: 85.37%;
+  }
+  @include xl {
+    width: 88.61%;
+  }
+  @include lg {
+    width: 91.21%;
+  }
+  @include md {
+    width: 93.26%;
+  }
+  @include sm {
+    width: 94.86%;
+  }
+  @include xs {
+    width: 96.09%;
+  }
+  @include xxs {
+    width: 97.04%;
+  }
+  @include tn {
+    width: 97.76%;
+  }
+  display: flex;
+  align-items: center;
+  width: 81.4%;
+  position: absolute;
+  top: 74px;
+  bottom: 958px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+.subtitle1 {
+  @include md {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 99px;
+}
+.flexRow5 > .spacer {
+  flex: 0 1 569px;
+}
+.subtitle11 {
+  @include md {
+    font-size: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_6;
+  text-align: center;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 158px;
+}
+.decorator1 {
+  width: 1292px;
+  height: auto;
+  aspect-ratio: 34;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: -3px;
+  left: -69px;
+}
